@@ -9,4 +9,10 @@ public class CabInvoiceGenerator {
         if(totalFare < 5) totalFare = 5;
         return totalFare;
     }
+    public int calculateTotalAggregateFare(Ride[] rides) {
+        int totalAggregateFare = 0;
+        for(Ride ride : rides)
+            totalAggregateFare += calculateFare(ride.distance , ride.time);
+        return totalAggregateFare;
+    }
 }
