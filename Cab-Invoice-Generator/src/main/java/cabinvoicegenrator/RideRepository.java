@@ -3,10 +3,10 @@ package cabinvoicegenrator;
 public class RideRepository {
 
 	int userID;
-    Ride[] rides;
+	Ride[] rides;
 
-    public RideRepository(int userID, Ride[] rides) {
-        this.userID = userID;
-        this.rides = rides;
-    }
+	public RideRepository(int userID, Ride[] rides) {
+		this.userID = userID;
+		this.rides = rides;
+	}
 }
